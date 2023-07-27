@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        .content{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 10%;
+            border-radius: 5px;
+        }
+        .title{
+            font-size: 30px;
+            color: cadetblue;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin: 0px 20px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .user-input{
+            width: 80%;
+            padding: 10px 10px;
+            margin: 0px 20px;
+            border: 1px solid cadetblue ;
+            border-radius: 5px;
+        }
+        .register-btn{
+            width: 85%;            
+            margin: 0px 20px;
+            border: none;
+            background-color: cadetblue;
+            border-radius: 5px;
+            padding: 10px 10px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .footer-text{
+            text-align: center;
+            padding: 20px 20px;
+        }
+        .footer-text span{
+            color: cadetblue;
+        }
+        .result{
+            text-align: center;
+            padding:20px 0px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+        .error{
+            color: red;
+            margin: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="content">
+    <div class="title">Caculator Projects</div>
+    <div class="input-group">
+        <label for="">Number 1 :</label>
+        <input type="number" id="firstnum" class="user-input" placeholder="Enter First Number...">
+        <small class="error" id="error1">Number One is required</small>
+    </div>
+    <div class="input-group">
+        <label for="">Number 2 :</label>
+        <input type="number" id="secnum" class="user-input" placeholder="Enter Second Number...">
+        <small class="error" id="error2">Number Two is required</small>
+
+    </div>
+    <div class="input-group">
+        <label for="">Operators :</label>
+        <select class="user-input" id="operation">
+            <option value="empty">Choose Operators</option>
+            <option value="add">+</option>
+            <option value="minus">-</option>
+            <option value="multiply">*</option>
+            <option value="division">/</option>
+        </select>
+        <small class="error" id="actionError">Please choose the action</small>
+
+    </div>
+    <div class="button-group">
+        <button class="register-btn" id="btnCaculate" type="button">Caculate</button>
+    </div>
+    <div class="result" id="result">
+        0
+    </div>
+  </div>
+</body>
+<script src="cal.js"></script>
+<script>
+</script>
+</html> 
